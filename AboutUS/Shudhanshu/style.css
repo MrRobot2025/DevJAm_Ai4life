@@ -1,0 +1,88 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-family: Poppins, sans-serif;
+    font-size: 62.9%;
+    z-index: -10;
+    perspective: 1000px;
+}
+h3{
+    font-weight: normal;
+    padding: 1.6rem 0;
+}
+
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+}
+#card{
+    transform-style: preserve-3d;
+    min-height: 80vh;
+    width: 35rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 60%;
+    padding: 1rem 5rem;
+    border-radius: 30px;
+    box-shadow: 0 20px 20px rgba(0,0,0,0.2), 20px 20px 40px rgba(0,0,0,0.2);
+
+}
+.image{
+    text-align: center;
+    height: 15rem;
+    width: 15rem;
+    background: transparent;
+    border-radius: 50%;
+    overflow: hidden;
+}
+img{
+    height: 15rem;
+}
+
+.circle{
+    position: absolute;
+    height: 15rem;
+    width: 15rem;
+    background: #222;
+    border-radius: 50%;
+    z-index: -1;
+}
+.info
+{
+    padding: 4rem 0;
+}
+.danger{
+    height: 2px;
+    width: 100px;
+    background-color: tomato;
+    transition: all 1s ;
+}
+.danger:hover{
+    transform: translateX(200%);
+
+}
+.hire{
+    position: relative;
+}
+a{
+    text-decoration: none;
+    border:solid tomato 2px;
+    color: white;
+    padding: 0.3rem 1rem;
+    position: relative;
+    transition: all 0.5s;
+    background-color: tomato;
+    border-radius: 30px;
+    
+}

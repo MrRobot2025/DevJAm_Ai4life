@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster+Two:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="icon" href="./image/ai.svg" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Amatic+SC&display=swap" rel="stylesheet">
+    <title>AI 4 Life| Covid</title>
+</head>
+<body>
+    <section class="main">  
+        <nav >
+       <h1 id='logo'>AI4LIFE</h1>
+       <ul id="nav-l">
+           <li><a class='nav-link active' href="#">Home</a></li>
+           <li><a About class='nav-link' href="./AboutUS/Shudhanshu/Aboutus.html">About us</a></li>
+           <li><a class='nav-link' href="#">Project</a></li>
+           
+       </ul>
+        </nav>
+        <div class="form">
+            <div class="input"> 
+                <form id="main-form" action="./Details/Detalis.html"> 
+                    <input type='text'  placeholder="Full name" name='fname' autocomplete="off"  required/>
+                    <div id='line-animation'></div>
+                    <input type='number'  placeholder="Land Area in Hectare" name='land' autocomplete="off" required/>
+                    <select name="City" required>
+                        <option hidden selected>Select City...</option>
+                        <option value="lucknow">lucknow</option>
+                        <option value="Allahabad">Allahabad</option>
+                        <option value="kanpur ">kanpur </option>
+                        <option value=" Agra"> Agra</option>
+                        <option value="Varanasi">Varanasi</option>
+                        <option value="fatehpur">fatehpur</option>
+                        <option value="bhopal">bhopal</option>
+                        <option value="jaipur">jaipur</option>
+                        <option value="patna">patna</option>
+                        <option value="amritsar">amritsar</option>
+                        <option value="kota">kota</option>
+                        <option value="madurai">madurai</option>
+                        <option value="mysore">mysore</option>
+                    </select>                         
+                    <select name="Crop" required>
+                        <option hidden selected>Select Crop...</option>
+                        <option value="Wheat">Wheat</option>
+                        <option value="millet">millet</option>
+                        <option value="Rice">Rice</option>
+                        <option value=" pea"> pea</option>
+                        <option value="Groundnut">Groundnut</option>
+                        <option value="Barley">Barley</option>
+                        <option value="Gram">Gram</option>
+                        <option value="Mustard">Mustard</option>
+                        <option value="Pumpkin">Pumpkin</option>
+                        <option value="Onion">Onion</option>
+                        <option value="Chilly">Chilly</option>
+                        <option value="Paddy">Paddy</option>
+                        <option value="Bitter gourd">Bitter gourd</option>
+                    </select>               
+                    <input id='btn-submit' type='submit' value='submit'/>
+                  </form>              
+            </div>
+        </div>
+        <div id="chatbot">
+            <div class="chatbot-topbar">
+                <h1  id="chatbot-close">X</h1>               
+                <img id="botimage" src="./image/max.png" >
+                <div id="online-status"></div>
+                <h1 id="botname">Max</h1>
+                <p id="status">Active</p> 
+            </div>
+            <div class="chat-area">
+            </div>
+            <div class="user-input">
+                <form method="GET">
+                <input id="input-msg"type="text"  placeholder="Type your message here.." name="msg"/>
+                <input id="input-btn" type="image" src="./image/send.svg"  value="sent"/>
+                </form>
+            </div>
+        </div>
+        <img  id="chatbot-img" src="./image/bot.svg" >
+    </section>
+    </main>
+    <div class="start-screen" id='start_screen'>
+        <div class="container">
+            <div class="start-button" id="BTN" href="#">
+                <span class="start-text" id="texte">Start</span>
+
+            </div>
+    </div>   
+    </div>
+    <div class="intro">
+        <div class="intro-text">
+            <h1 class="hide">
+                <span class="text text-1">Hello ,</span>
+            </h1>
+            <h1 class="hide">
+                <span class="text text-2">AI4LIFE Present's</span>
+            </h1>
+            <h1 class="hide">
+                <span class="text text-3">Agriculture Project.</span>
+            </h1>
+
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js" integrity="sha512-cdV6j5t5o24hkSciVrb8Ki6FveC2SgwGfLE31+ZQRHAeSRxYhAQskLkq3dLm8ZcWe1N3vBOEYmmbhzf7NTtFFQ==" crossorigin="anonymous"></script>
+    <script src="./app.js"></script>
+    
+</body>
+</html>
